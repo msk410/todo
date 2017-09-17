@@ -1,0 +1,28 @@
+{
+  "name": "react-inbox",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3",
+    "codeceptjs-webdriverio": "^1.1.0",
+    "enzyme": "^2.9.1",
+    "font-awesome": "^4.7.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1",
+    "selenium-standalone": "^6.6.0",
+    "webdriverio": "^4.8.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "codeceptjs-init": "codeceptjs init",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "start-selenium": "selenium-standalone install && selenium-standalone start",
+    "test": "CI=true react-scripts test --env=jsdom && codeceptjs run --steps",
+    "test-e2e": "codeceptjs run --steps",
+    "test-unit": "CI=true react-scripts test --env=jsdom",
+    "test-unit-watch": "react-scripts test --env=jsdom"
+  }
+}
